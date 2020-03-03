@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Meta Data -->
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <meta name="description" content="Survey Form">
+  <meta name="DAMILOLA OGUNLEYE" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon Link -->
+  <link rel="shortcut icon" type="image/png" href="fcc.ico">
+
+  <!-- Google Font Link -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+
+  
+
+  <div id="main">
+      <div class="header-container">
+        <h1 id="title">FCC Survey Form</h1>
+        <p id="description">Let us know how we can improve freeCodeCamp</p>
+      </div>
+    <fieldset>
+      <form id="survey-form">
+        <label for="name" id="name-label" required>Full Name <span class="required-color">*</span></label>
+        <div class="text-number-email-textarea-container">
+          <input type="text" name="name" placeholder="Enter your full name" id="name" required>
+          <div class="line"></div>
+        </div>
+
+        <label for="email" id="email-label" required>Email <span class="required-color">*</span></label>
+        <div class="text-number-email-textarea-container">
+          <input type="email" name="email" placeholder="Enter your Email" id="email" required>
+          <div class="line"></div>
+        </div>
+     
+        <label for="age" id="number-label" required>Age <span class="required-color">*</span></label>
+        <div class="text-number-email-textarea-container">
+          <input type="number" name="age" min="1" max="120" placeholder="Enter your Age" id="number" required>
+          <div class="line"></div>
+        </div>
+
+        <label for="role">Which option best describes your current role?</label>
+        <div class="select-container">
+          <select name="role" id="dropdown">
+            <option value="placeholder" disabled selected>Select an option</option>
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+          <div class="line"></div>
+        </div>
+
+        <label for="recommend" required>How likely is that you would recommend freeCodeCamp to a friend? <span class="required-color">*</span></label>
+        <div class="radio-checkbox-container">
+          <input type="radio" name="recommend" value="definitely"><span class="radio-checkbox-text">Definitely</span><br>
+          <input type="radio" name="recommend" value="maybe" checked><span class="radio-checkbox-text">Maybe</span><br>
+          <input type="radio" name="recommend" value="not-sure"><span class="radio-checkbox-text">Not Sure</span><br>
+        </div>
+
+        <label for="likemost">What do you like most in FCC?</label>
+        <div class="select-container">
+          <select name="likemost" id="dropdown">
+            <option value="placeholder" disabled selected>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open source">Open Source</option>
+          </select>
+          <div class="line"></div>
+        </div>
+
+        <label for="improved">Things that should be improved in the future (Check all that apply)</label>
+        <div class="radio-checkbox-container">
+          <input type="checkbox" name="improved" value="front-end-projects"><span class="radio-checkbox-text">Front-end Projects</span><br>
+          <input type="checkbox" name="improved" value="back-end-projects"><span class="radio-checkbox-text">Back-end Projects</span><br>
+          <input type="checkbox" name="improved" value="data-visualization"><span class="radio-checkbox-text">Data Visualization</span><br>
+          <input type="checkbox" name="improved" value="challenges"><span class="radio-checkbox-text">Challenges</span><br>
+          <input type="checkbox" name="improved" value="open-source-community"><span class="radio-checkbox-text">Open Source Community</span><br>
+          <input type="checkbox" name="improved" value="gitter-help-rooms"><span class="radio-checkbox-text">Gitter help rooms</span><br>
+          <input type="checkbox" name="improved" value="videos"><span class="radio-checkbox-text">Videos</span><br>
+          <input type="checkbox" name="improved" value="city-meetups"><span class="radio-checkbox-text">City Meetups</span><br>
+          <input type="checkbox" name="improved" value="wiki"><span class="radio-checkbox-text">Wiki</span><br>
+          <input type="checkbox" name="improved" value="forum"><span class="radio-checkbox-text">Forum</span><br>
+          <input type="checkbox" name="improved" value="additional-courses"><span class="radio-checkbox-text">Additional Courses</span><br>
+        </div>
+
+        <label for="comments">Any Comments or Suggestions?</label>
+        <div class="text-number-email-textarea-container">
+          <textarea name="comments" rows="4" placeholder="Enter your comment here..."></textarea>
+          <div class="line"></div>
+        </div>
+
+        <input type="submit" value="Submit" id="submit">
+      </form>
+     </fieldset>
+  </div>
+
+</body>
+
+<!-- FreeCodeCamp Test Suite -->
+  <script src="../../../cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+</html>

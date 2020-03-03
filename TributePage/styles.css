@@ -1,0 +1,143 @@
+/* CSS Variables */
+:root {
+    /* Credit for colors: https://www.behance.net/gallery/8482091/Flat-Bold-UI-Kit*/
+    --dark-grey-color: rgb(40, 40, 40);
+    --light-grey-color: rgb(72, 72, 72);
+    --green-accent-color: rgb(0, 222, 116);
+    --blue-color: rgb(61, 181, 218);
+    --text-color: rgb(178, 184, 188);
+}
+
+body {
+    margin-bottom: 1em;
+    background-color: var(--dark-grey-color);
+}
+
+strong {
+    color: white;
+}
+
+#main {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size: 120%;
+    line-height: 1.2;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-align: center;
+    color: var(--text-color);
+    border-radius: 5px;
+    background-color: var(--light-grey-color);
+}
+
+#title {
+    font-family: 'Impact';
+    font-size: 4em;
+    padding-top: .5em;
+    color: var(--green-accent-color);
+    text-decoration: underline;
+}
+
+span {
+  color: white;
+}
+
+#img-div {
+    margin: 10px;
+    padding: 5px;
+    background-color: black;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img-caption {
+    padding-right: 1em;
+    padding-left: 1em;
+    color: white;
+}
+
+#tribute-info {
+    display: block;
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+#tribute-heading {
+    font-family: 'Impact';
+    padding-top: 1em;
+    padding-left: .5em;
+    text-align: left;
+    color: var(--green-accent-color);
+    text-decoration: underline;
+}
+
+ul {
+    padding-right: 1em;
+    list-style: none;
+    text-align: left;
+}
+
+li::before {
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    content: '•';
+    color: var(--green-accent-color);
+}
+
+#container {
+    display: block;
+    max-width: 60em;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+#quote {
+    text-align: justify;
+}
+
+#links-heading {
+    font-family: 'Impact';
+    font-size: 1.5em;
+    padding-top: 1em;
+    color: var(--green-accent-color);
+    text-decoration: underline;
+}
+
+#tribute-link {
+    display: inline-block;
+    width: 10em;
+    margin: 1em;
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    border-radius: 25px;
+    background-color: var(--blue-color);
+}
+
+#tribute-link:hover {
+    color: white;
+    box-shadow: 2px 2px 20px 8px var(--text-color);
+}
+
+.button-container {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 80%;
+  }
+
+  #tribute-link {
+    width: 80%;
+  }
+}
