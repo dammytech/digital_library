@@ -1,0 +1,176 @@
+/* CSS Variables */
+:root { --dark-gray-color: rgb(120, 73, 93); }
+
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-color: var(--dark-gray-color);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: rgb(50, 50, 50);
+}
+
+/* IE9  - Highlight */
+::selection {
+  background: var(--dark-gray-color);
+  color: white;
+  text-shadow: none;
+}
+/* Safari & Chrome - Highlight */
+::-webkit-selection {
+  background: var(--dark-gray-color);
+  color: white;
+  text-shadow: none;
+}
+/* Mozilla based - Highlight */
+::-moz-selection {
+  background: var(--dark-gray-color);
+  color: white;;
+  text-shadow:none;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  background-color: var(--dark-gray-color);
+}
+
+.navbar-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 1em;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-link:hover,
+.profile-link:hover {
+  color: grey;
+}
+
+#welcome-section {
+  background-color: rgb(120, 73, 93);
+  height: 100vh;
+  width: 100vw;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.welcome-container {
+  text-align: center;
+  color: white;
+  display: inline-block;
+  width: 100%;
+}
+
+#about {
+  background-color: white;
+  padding: 40px 20px 40px 20px;
+}
+
+.section-container {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-container h2 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.section-container p {
+  margin-top: 20px;
+}
+
+#projects {
+  background-color: rgb(237, 238, 239);
+  padding: 40px 20px 40px 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-top: 40px;
+}
+
+.grid-item {
+  text-decoration: none;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid-item h3 {
+  color: rgb(50, 50, 50);
+  border: solid 2px rgb(50, 50, 50);
+  padding: 10px 0 10px 0;
+}
+
+.grid-item h3:hover {
+  color: white;
+  background-color: rgb(50, 50, 50);
+}
+
+#profile {
+  background-color: var(--dark-gray);
+  padding-bottom: 60px;
+}
+
+#profile p {
+  color: white;
+  text-align: center;
+  padding: 60px 0 30px 0;
+  font-size: 0.9em;
+}
+
+.profile-link-container {
+  text-align: center;
+}
+
+#profile-link, .profile-link {
+  padding: 0 20px 0 20px;
+  color: white;
+  font-size: 1.5em;
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+  .navbar-container {
+    justify-content: flex-end;
+    max-width: 1200px;
+  }
+
+  .nav-link {
+    margin-right: 40px;
+    flex-grow: initial;
+    text-align: right;
+  }
+
+  .welcome-container {
+    font-size: 2em;
+  }
+
+  .grid-container {
+     grid-template-columns: repeat(auto-fill, minmax(445px, 1fr));
+  }
+
+  .section-container {
+    max-width: 1000px;
+  }
+
+}
